@@ -575,6 +575,14 @@ video {
   margin-right: auto;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -599,12 +607,28 @@ video {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-32 {
   width: 8rem;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-screen-xl {
@@ -657,6 +681,10 @@ video {
   border-radius: 0.375rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .bg-blue-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
@@ -684,6 +712,18 @@ video {
 
 .bg-\[url\(\'https\:\/\/www\.rizmona\.com\/wp-content\/uploads\/2024\/05\/Dubai-UAE-Background_Medium-Tranparency-Rizmona-Consultants\.jpg\'\)\] {
   background-image: url('https://www.rizmona.com/wp-content/uploads/2024/05/Dubai-UAE-Background_Medium-Tranparency-Rizmona-Consultants.jpg');
+}
+
+.bg-\[url\(\'https\:\/\/png\.pngtree\.com\/thumb_back\/fh260\/background\/20201104\/pngtree-technology-background-binary-computer-code-vector-illustration-image_458703\.jpg\'\)\] {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20201104/pngtree-technology-background-binary-computer-code-vector-illustration-image_458703.jpg');
+}
+
+.bg-\[url\(\'https\:\/\/www\.shutterstock\.com\/image-vector\/abstract-ai-circuit-board-background-600nw-2471339475\.jpg\'\)\] {
+  background-image: url('https://www.shutterstock.com/image-vector/abstract-ai-circuit-board-background-600nw-2471339475.jpg');
+}
+
+.bg-\[url\(\'https\:\/\/img\.lovepik\.com\/background\/20211021\/large\/lovepik-digital-security-code-background-image_400244003\.jpg\'\)\] {
+  background-image: url('https://img.lovepik.com/background/20211021/large/lovepik-digital-security-code-background-image_400244003.jpg');
 }
 
 .bg-center {
@@ -720,8 +760,32 @@ video {
   text-align: center;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-black {
@@ -748,6 +812,16 @@ video {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:bg-sky-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 211 252 / var(--tw-bg-opacity));
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
