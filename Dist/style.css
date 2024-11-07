@@ -570,6 +570,11 @@ video {
   top: 5rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -590,12 +595,20 @@ video {
   height: 24rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-32 {
   width: 8rem;
 }
 
 .w-full {
   width: 100%;
+}
+
+.max-w-screen-xl {
+  max-width: 1280px;
 }
 
 .flex-col {
@@ -664,6 +677,23 @@ video {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'https\:\/\/www\.rizmona\.com\/wp-content\/uploads\/2024\/05\/Dubai-UAE-Background_Medium-Tranparency-Rizmona-Consultants\.jpg\'\)\] {
+  background-image: url('https://www.rizmona.com/wp-content/uploads/2024/05/Dubai-UAE-Background_Medium-Tranparency-Rizmona-Consultants.jpg');
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -674,6 +704,16 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .text-center {
@@ -692,6 +732,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.bg-blend-multiply {
+  background-blend-mode: multiply;
 }
 
 .shadow-lg {
@@ -730,5 +774,17 @@ video {
 
   .md\:rounded-sm {
     border-radius: 0.125rem;
+  }
+
+  .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:py-56 {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
   }
 }
