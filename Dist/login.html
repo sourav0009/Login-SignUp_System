@@ -10,9 +10,9 @@
 
 <body>
     <section class=" h-screen flex justify-center items-center">
-        <div class=" h-[45%] w-[30%] bg-slate-400 shadow-2xl rounded-md">
+        <div class=" md:h-[50%] md:w-[30%] w-[90%] bg-green-400 shadow-2xl rounded-md">
             <h1 class=" text-2xl font-bold text-center mt-2">Login</h1>
-            <div class=" ml-8 space-y-3">
+            <div class=" md:ml-8 ml-2 mr-2 space-y-3">
                 <div>
                     <h2 class=" font-semibold">Email</h2>
                     <div class=" relative flex items-center">
@@ -28,58 +28,66 @@
                 </div>
                 <div>
                     <h2 class=" font-semibold">Password</h2>
-                    <svg class=" h-5 absolute m-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M17 14H12.6586C11.8349 16.3304 9.61244 18 7 18C3.68629 18 1 15.3137 1 12C1 8.68629 3.68629 6 7 6C9.61244 6 11.8349 7.66962 12.6586 10H23V14H21V18H17V14ZM7 14C8.10457 14 9 13.1046 9 12C9 10.8954 8.10457 10 7 10C5.89543 10 5 10.8954 5 12C5 13.1046 5.89543 14 7 14Z">
-                        </path>
-                    </svg>
-                    <svg id="icon" onclick="toggle()" class=" h-5 absolute m-3 right-[38%] cursor-pointer"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M12.0003 3C17.3924 3 21.8784 6.87976 22.8189 12C21.8784 17.1202 17.3924 21 12.0003 21C6.60812 21 2.12215 17.1202 1.18164 12C2.12215 6.87976 6.60812 3 12.0003 3ZM12.0003 19C16.2359 19 19.8603 16.052 20.7777 12C19.8603 7.94803 16.2359 5 12.0003 5C7.7646 5 4.14022 7.94803 3.22278 12C4.14022 16.052 7.7646 19 12.0003 19ZM12.0003 16.5C9.51498 16.5 7.50026 14.4853 7.50026 12C7.50026 9.51472 9.51498 7.5 12.0003 7.5C14.4855 7.5 16.5003 9.51472 16.5003 12C16.5003 14.4853 14.4855 16.5 12.0003 16.5ZM12.0003 14.5C13.381 14.5 14.5003 13.3807 14.5003 12C14.5003 10.6193 13.381 9.5 12.0003 9.5C10.6196 9.5 9.50026 10.6193 9.50026 12C9.50026 13.3807 10.6196 14.5 12.0003 14.5Z">
-                        </path>
-                    </svg>
-                    <!-- <svg class="h-5 absolute m-3 right-[38%] cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M17.8827 19.2968C16.1814 20.3755 14.1638 21.0002 12.0003 21.0002C6.60812 21.0002 2.12215 17.1204 1.18164 12.0002C1.61832 9.62282 2.81932 7.5129 4.52047 5.93457L1.39366 2.80777L2.80788 1.39355L22.6069 21.1925L21.1927 22.6068L17.8827 19.2968ZM5.9356 7.3497C4.60673 8.56015 3.6378 10.1672 3.22278 12.0002C4.14022 16.0521 7.7646 19.0002 12.0003 19.0002C13.5997 19.0002 15.112 18.5798 16.4243 17.8384L14.396 15.8101C13.7023 16.2472 12.8808 16.5002 12.0003 16.5002C9.51498 16.5002 7.50026 14.4854 7.50026 12.0002C7.50026 11.1196 7.75317 10.2981 8.19031 9.60442L5.9356 7.3497ZM12.9139 14.328L9.67246 11.0866C9.5613 11.3696 9.50026 11.6777 9.50026 12.0002C9.50026 13.3809 10.6196 14.5002 12.0003 14.5002C12.3227 14.5002 12.6309 14.4391 12.9139 14.328ZM20.8068 16.5925L19.376 15.1617C20.0319 14.2268 20.5154 13.1586 20.7777 12.0002C19.8603 7.94818 16.2359 5.00016 12.0003 5.00016C11.1544 5.00016 10.3329 5.11773 9.55249 5.33818L7.97446 3.76015C9.22127 3.26959 10.5793 3.00016 12.0003 3.00016C17.3924 3.00016 21.8784 6.87992 22.8189 12.0002C22.5067 13.6998 21.8038 15.2628 20.8068 16.5925ZM11.7229 7.50857C11.8146 7.50299 11.9071 7.50016 12.0003 7.50016C14.4855 7.50016 16.5003 9.51488 16.5003 12.0002C16.5003 12.0933 16.4974 12.1858 16.4919 12.2775L11.7229 7.50857Z">
-                        </path>
-                    </svg> -->
-                    <input id="password" class="rounded-md outline-0 pl-10 pr-3  p-3 w-96" type="password"
-                        placeholder="Enter your Password">
+                    <div class="relative flex items-center">
+                        <svg class=" h-5 absolute m-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M17 14H12.6586C11.8349 16.3304 9.61244 18 7 18C3.68629 18 1 15.3137 1 12C1 8.68629 3.68629 6 7 6C9.61244 6 11.8349 7.66962 12.6586 10H23V14H21V18H17V14ZM7 14C8.10457 14 9 13.1046 9 12C9 10.8954 8.10457 10 7 10C5.89543 10 5 10.8954 5 12C5 13.1046 5.89543 14 7 14Z">
+                            </path>
+                        </svg>
+                        <svg id="icon" onclick="toggle()"
+                            class=" h-5 absolute m-3 md:right-[10%] right-0 cursor-pointer"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12.0003 3C17.3924 3 21.8784 6.87976 22.8189 12C21.8784 17.1202 17.3924 21 12.0003 21C6.60812 21 2.12215 17.1202 1.18164 12C2.12215 6.87976 6.60812 3 12.0003 3ZM12.0003 19C16.2359 19 19.8603 16.052 20.7777 12C19.8603 7.94803 16.2359 5 12.0003 5C7.7646 5 4.14022 7.94803 3.22278 12C4.14022 16.052 7.7646 19 12.0003 19ZM12.0003 16.5C9.51498 16.5 7.50026 14.4853 7.50026 12C7.50026 9.51472 9.51498 7.5 12.0003 7.5C14.4855 7.5 16.5003 9.51472 16.5003 12C16.5003 14.4853 14.4855 16.5 12.0003 16.5ZM12.0003 14.5C13.381 14.5 14.5003 13.3807 14.5003 12C14.5003 10.6193 13.381 9.5 12.0003 9.5C10.6196 9.5 9.50026 10.6193 9.50026 12C9.50026 13.3807 10.6196 14.5 12.0003 14.5Z">
+                            </path>
+                        </svg>
+                        <input id="password" class="rounded-md outline-0 pl-10 md:pr-3 p-3 w-96" type="password"
+                            placeholder="Enter your Password">
+                    </div>
                 </div>
             </div>
-            <a href="home.html">
-                <button class=" rounded-md p-3 w-48 border ml-32 mt-8 hover:bg-sky-300 ">
-                    Submit
-                </button>
-            </a>
+            <button id="btn" onclick="btnClick()"
+                class=" rounded-md md:p-3 md:w-48 p-2 w-48 border md:ml-32 ml-16 mt-8 hover:bg-sky-300 ">
+                Submit
+            </button>
             <a href="sighup.html">
-                <h1 class=" text-center mt-3">Don't have Account <span
-                        class=" hover:border-b-2 hover:border-blue-500 hover:text-blue-500 cursor-pointer">Click
-                        hear</span>
+                <h1 class=" text-center mt-3">Don't have an Account? <span
+                        class=" hover:border-b-2 hover:border-blue-500 text-blue-500 cursor-pointer">Click
+                        here</span>
                 </h1>
             </a>
         </div>
     </section>
-    
 
     <script>
         var state = false;
+
         function toggle() {
             if (state) {
                 document.getElementById("password").setAttribute("type", "password");
                 document.getElementById("icon").style.color = "black";
                 state = false;
-                
             } else {
                 document.getElementById("password").setAttribute("type", "text");
                 document.getElementById("icon").style.color = "blue";
                 state = true;
             }
-            
+        }
+
+        function btnClick() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (email === "" || password === "") {
+                alert("Please fill in both email and password fields.");
+            } else {
+                alert("You have successfully logged in!");
+                window.location.href = "home.html"; // Only redirects if fields are filled
+            }
         }
     </script>
 </body>
+
 
 </html>

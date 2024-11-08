@@ -582,6 +582,10 @@ video {
   top: 5rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .m-3 {
   margin: 0.75rem;
 }
@@ -613,6 +617,30 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.ml-28 {
+  margin-left: 7rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
 }
 
 .flex {
@@ -665,6 +693,62 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[60px\] {
+  width: 60px;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .max-w-screen-xl {
@@ -835,6 +919,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 .bg-blend-multiply {
   background-blend-mode: multiply;
 }
@@ -891,12 +980,52 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:right-\[38\%\] {
+    right: 38%;
+  }
+
+  .md\:right-\[\%\] {
+    right: %;
+  }
+
+  .md\:right-\[50\%\] {
+    right: 50%;
+  }
+
+  .md\:right-\[30\%\] {
+    right: 30%;
+  }
+
+  .md\:right-\[20\%\] {
+    right: 20%;
+  }
+
+  .md\:right-\[0\%\] {
+    right: 0%;
+  }
+
+  .md\:right-\[10\%\] {
+    right: 10%;
+  }
+
+  .md\:m-3 {
+    margin: 0.75rem;
+  }
+
   .md\:ml-20 {
     margin-left: 5rem;
   }
 
   .md\:mr-20 {
     margin-right: 5rem;
+  }
+
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .md\:ml-32 {
+    margin-left: 8rem;
   }
 
   .md\:flex {
@@ -907,13 +1036,45 @@ video {
     display: none;
   }
 
+  .md\:h-\[45\%\] {
+    height: 45%;
+  }
+
+  .md\:h-\[\%\] {
+    height: %;
+  }
+
+  .md\:h-\[50\%\] {
+    height: 50%;
+  }
+
+  .md\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
+  }
+
   .md\:rounded-sm {
     border-radius: 0.125rem;
+  }
+
+  .md\:p-3 {
+    padding: 0.75rem;
   }
 
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .md\:pr-3 {
+    padding-right: 0.75rem;
   }
 }
 
