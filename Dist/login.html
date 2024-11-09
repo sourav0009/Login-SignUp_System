@@ -79,11 +79,21 @@
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
 
-            if (email === "" || password === "") {
-                alert("Please fill in both email and password fields.");
+            // Retrieve stored email and password from localStorage
+            const storedEmail = localStorage.getItem("email");
+            const storedPassword = localStorage.getItem("password");
+
+            if (storedEmail && storedPassword) {
+                // If email and password match, redirect to home
+                if (email === storedEmail && password === storedPassword) {
+                    alert("Login successful!");
+                    window.location.href = "home.html";
+                } else {
+                    alert("Incorrect email or password. Please try again.");
+                }
             } else {
-                alert("You have successfully logged in!");
-                window.location.href = "home.html"; // Only redirects if fields are filled
+                // No account found, suggest signing up
+                alert("No account found. Please sign up first.");
             }
         }
     </script>
