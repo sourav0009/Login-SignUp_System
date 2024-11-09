@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section class=" h-screen flex justify-center items-center">
+    <section class=" h-screen flex justify-center bg-[url('')] items-center">
         <div class="  md:h-96 md:w-[30%] w-64 bg-green-400 shadow-2xl rounded-md">
             <h1 class=" text-center mt-3 text-2xl font-bold">SignUp</h1>
             <div class=" md:ml-8 ml-2 mr-2 space-y-3">
@@ -75,23 +75,40 @@
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
             const reenterPassword = document.getElementById("reenterPassword").value;
-
+        
+            // Check if all fields are filled
             if (!name || !email || !password || !reenterPassword) {
                 alert("Please fill all fields.");
                 return;
             }
-
+        
+            // Check if passwords match
             if (password !== reenterPassword) {
                 alert("Passwords do not match.");
                 return;
             }
-
+        
+            // Basic email format validation (simple check)
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+        
+            // Basic password strength validation (min 6 characters for example)
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return;
+            }
+        
+            // Store the user data in localStorage
             const user = { name, email, password };
             localStorage.setItem("user", JSON.stringify(user));
-
+        
             alert("You have successfully signed up!");
-            window.location.href = "login.html"; // Redirect to login page
+            window.location.href = "login.html";
         }
+        
     </script>
 </body>
 

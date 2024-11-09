@@ -79,15 +79,15 @@
             const email = document.getElementById("loginEmail").value;
             const password = document.getElementById("loginPassword").value;
 
-            // Retrieve stored email and password from localStorage
-            const storedEmail = localStorage.getItem("email");
-            const storedPassword = localStorage.getItem("password");
+            // Retrieve and parse the stored user data from localStorage
+            const user = JSON.parse(localStorage.getItem("user"));
 
-            // Check if stored email and password exist
-            if (storedEmail && storedPassword) {
-                if (email === storedEmail && password === storedPassword) {
+            // Check if user data exists
+            if (user) {
+                // Check if email and password match
+                if (user.email === email && user.password === password) {
                     alert("Login successful!");
-                    window.location.href = "home.html"; // Redirect to homepage
+                    window.location.href = "home.html";
                 } else {
                     alert("Incorrect email or password. Please try again.");
                 }
@@ -95,6 +95,7 @@
                 alert("No account found. Please sign up first.");
             }
         }
+
     </script>
 </body>
 
